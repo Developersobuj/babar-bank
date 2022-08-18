@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Area </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center">Let's get some <span class="text-orange-600">Money</span>!!!!</h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+                <div class="bg-green-400 p-8 text-white rounded-xl">
+                    <h4 class="text-2xl">Deposit</h4>
+                    <h2 class="text-5xl">$<span id="deposit-total">00</span> </h2>
+                </div>
+
+                <div class="bg-violet-400 p-8 text-white rounded-xl">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <h2 class="text-5xl">$<span id="withdraw-total">00</span> </h2>
+                </div>
+
+                <div class="bg-red-400 p-8 text-white rounded-xl">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h2 class="text-5xl">$<span id="previous-total-amount">1240</span> </h2>
+                </div>
+
+            </div>
+        </section>
+        <!-- deposit and withdraw area -->
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-green-400 p-8 rounded-xl">
+                    <h4 class="text-2xl mb-4 text-white ">Deposit</h4>
+                    <input id="deposit-feild" class="block  mb-2 w-3/4 p-1" type="text"
+                        placeholder="$ Enter your deposit amount">
+
+                    <button id="deposit-btn"
+                        class="bg-amber-100 px-5 py-2 text-base text-blue-900 rounded-lg font-medium hover:bg-violet-600 hover:text-white">Deposit</button>
+                </div>
+
+                <div class="bg-violet-400 p-8  rounded-xl">
+                    <h4 class="text-2xl mb-4 text-white">Withdraw</h4>
+                    <input id="withdraw-feild" class="block  mb-2 w-3/4 p-1" type="text"
+                        placeholder="$ Enter your deposit amount">
+
+                    <button id="withdraw-btn"
+                        class="bg-amber-100 px-5 py-2 text-base text-blue-900 rounded-lg font-medium hover:bg-violet-600 hover:text-white">Withdraw</button>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
